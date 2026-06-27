@@ -5,6 +5,9 @@ metadata:
   description: GitOps manifests for astro-app
   annotations:
     backstage.io/source-location: url:https://github.com/ultraJeffOrg/astro-app-gitops
+    backstage.io/kubernetes-id: astro-app
+    backstage.io/kubernetes-namespace: astro-app
+    argocd/app-selector: app.kubernetes.io/instance=astro-app
   links:
     - url: https://github.com/ultraJeffOrg/astro-app-gitops
       title: GitOps Repository
