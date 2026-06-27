@@ -1,0 +1,19 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: astro-app
+  namespace: astro-app
+  labels:
+    app: astro-app
+    app.kubernetes.io/name: astro-app
+    app.kubernetes.io/instance: astro-app
+    backstage.io/kubernetes-id: astro-app
+spec:
+  to:
+    kind: Service
+    name: astro-app
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

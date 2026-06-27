@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: astro-app-gitops
+  description: GitOps manifests for astro-app
+  annotations:
+    backstage.io/source-location: url:https://github.com/ultraJeffOrg/astro-app-gitops
+  links:
+    - url: https://github.com/ultraJeffOrg/astro-app-gitops
+      title: GitOps Repository
+      icon: github
+spec:
+  type: gitops
+  owner: platform-engineering
+  lifecycle: experimental
+  dependencyOf:
+    - component:default/astro-app
