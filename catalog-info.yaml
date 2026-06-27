@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: astro-app-gitops
   description: GitOps manifests for astro-app
@@ -11,7 +11,7 @@ metadata:
       icon: github
 spec:
   type: gitops
-  owner: platform-engineering
+  owner: user:default/admin
   lifecycle: experimental
-  dependencyOf:
+  dependsOn:
     - component:default/astro-app
