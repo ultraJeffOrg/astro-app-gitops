@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: astro-app
-          image: quay.io/jefrankl/astro-app:e7f37fc9994ecd4b547e004522d057923e22fa6f
+          image: quay.io/jefrankl/astro-app:43fb10313431b4576e949a05968fa7dd6d9a6655
           ports:
             - containerPort: 8080
               protocol: TCP
